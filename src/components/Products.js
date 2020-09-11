@@ -23,7 +23,7 @@ export default function Products() {
   }, []);
 
   const fetchData = () => {
-    fetch('http://localhost:5000/product')
+    fetch('https://958da1aee8f3.ngrok.io/product')
       .then(response => response.json())
       .then(data => {setProducts(data)
         console.log(data);
